@@ -1,9 +1,15 @@
 .logo__image {
-    max-width: 500px;
+    max-width: 25rem;
+    max-height: 10rem;
 }
 
 h1 {
-    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
     margin-left: auto;
-    color: red;
+    color: #000;
+}
+
+.titleBottom {
+    text-align: center;
 }
