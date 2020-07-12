@@ -5,25 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
     <title>Daily Journal</title>
 </head>
 <header>
     <div class="header">
         <img src="images/Logo.jpg" class="logo__image">
-        <h1>Michael Tylers' daily joiurnal</h1>
+        <div class="header__title">
+            <h1>Michael Tyler</h1>
+            <h2 class="titleBottom"> daily journal</h2>
+        </div>
         <!-- 1. a logo 2. my name -->
     </div>
 </header>
 
 <body>
-    <h2>Daily Journal</h2>
+    <h2 class="journal">Daily Journal</h2>
     <!-- 3.form to collect journal entry -->
-    <label for="date">Toaday</label>
-    <input type="date" id="todays date" name="today">
-    <label for="text">What was covered</label>
-    <input type="text" id="covered" name="topic">
-    <label for="textarea">What I learned...</label>
-    <input type="textarea" id="textarea" name="learned">
+    <form action="">
+        <fieldset>
+            <label for="journalDate">Date of Entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+            <label for="journalConcepts">Concepts covered</label>
+            <input type="text" name="journalConcepts" id="journalConcepts">
+            <label for="journalEntry">Journal Entry</label>
+            <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
+            <label for="moodSelecet">Mood:</label>
+            <select name="moodSelect" id="moodSelect">
+                <option value="Great">Things are Great</option>
+                <option value="Okay">Alrighty then</option>
+                <option value="Fair">wait what?</option>
+                <option value="Not so Good">Ya, who, what, when?</option>
+                <option value="Very Bad">God please no...</option>
+            </select>
+            <button>Record Journal Entry</button>
+        </fieldset>
+    </form>
+    <ul id="journalRecordsList">
+        <div class="journalRecord">
+
+        </div>
+    </ul>
     <!-- i. date field <date></date> -->
     <!-- ii. concepts covered <text></text> -->
     <!-- iii.journal entry <textarea></textarea> enter in what you learned how you felt and plans for upcoming days -->
