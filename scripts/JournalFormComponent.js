@@ -1,4 +1,26 @@
+import { saveJournalEntry } from "./JournalDataProvider.js"
+
+const eventHub = document.querySelector(".container")
 const componentTarget = document.querySelector(".JournalForm")
+
+eventHub.addEventListener("click", clickevent => {
+    if (clickevent.target.id === "saveJournalEntry") {
+
+        const journalDate = document.querySelector("#journalDate")
+        const journalConcepts = document.querySelector("#journalConcepts")
+        const journalEntry = document.querySelector("#journalEntry")
+        const moodSelect = document.querySelector("#moodSelect")
+
+
+        const newEntry = {
+            date: journalDate.value,
+            concept: journalConcept.value,
+            entry: journalEntry.value,
+            mood: moodSelect.value
+        }
+        saveJournalEntry(newEntry)
+    }
+})
 
 export const JournalForm = () => {
     componentTarget.innerHTML =
@@ -8,7 +30,7 @@ export const JournalForm = () => {
             <label for="journalDate">Date of Entry</label>
             <input type="date" name="journalDate" id="journalDate">
             <label for="journalConcepts">Concepts covered</label>
-            <input type="text" name="journalConcepts" id="journalConcepts">
+            <input type="text" name="journalConcept" id="journalConcept" autoComplete="off">
             <label for="journalEntry">Journal Entry</label>
             <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
             <label for="moodSelecet">Mood:</label>
@@ -19,7 +41,7 @@ export const JournalForm = () => {
                 <option value="Not good">bad</option>
                 <option value="Very Bad">Not Okay</option>
             </select>
-            <button>Record Journal Entry</button>
+            <button id="saveJournalEntry">Record Journal Entry</button>
         </fieldset>
     </form>
     `
