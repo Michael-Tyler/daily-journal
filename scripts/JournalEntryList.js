@@ -1,17 +1,40 @@
-import { useJournalEntries } from "./JournalDataProvider.js"
-import { journalEntryComponent } from "./JournalEntry.js";
+  import { useJournalEntries } from "./JournalDataProvider.js"
+  import { journalEntryComponent } from "./JournalEntry.js";
 
-const entryLog = document.querySelector("#entryLog")
+  const entryLog = document.querySelector("#entryLog")
 
-export const EntryListComponent = () => {
-    let entryHTMLReprsentation = ""
-    const entries = useJournalEntries()
+  export const EntryListComponent = () => {
 
-    for (const entry of entries) {
-        entryHTMLReprsentation += journalEntryComponent(entry)
+      const entries = useJournalEntries()
+
+      entryLog.innerHTML += `
+      <article class="journal__entries">
+    ${
+      entries.map(entry => 
+        journalEntryComponent(entry)
+        ).join("")
     }
-
-    entryLog.innerHTML += `
-    ${entryHTMLReprsentation}
+      </article>
     `
-}
+
+  }
+
+  // import { useJournalEntries } from "./JournalDataProvider.js"
+  // import { journalEntryComponent } from "./JournalEntry.js";
+
+  // const entryLog = document.querySelector("#entryLog")
+
+  // export const EntryListComponent = () => {
+  //     const entries = useJournalEntries()
+
+
+  //     const entryHTMLReprsentation = entries.map(journalEntryComponent).join("")
+
+
+  //     entryLog.innerHTML += `
+  //     <article class="journal__entries">
+  //   ${entryHTMLReprsentation}
+  //     </article>
+  //   `
+
+  // }

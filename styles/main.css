@@ -1,4 +1,5 @@
-@import url("header.css");
+@import "./header.css";
+@import "./JournalCards.css";
 .header {
     display: flex;
     justify-content: space-between;
