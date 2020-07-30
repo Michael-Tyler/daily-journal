@@ -7,7 +7,7 @@ eventHub.addEventListener("click", clickevent => {
     if (clickevent.target.id === "saveJournalEntry") {
 
         const journalDate = document.querySelector("#journalDate")
-        const journalConcepts = document.querySelector("#journalConcepts")
+        const journalConcept = document.querySelector("#journalConcept")
         const journalEntry = document.querySelector("#journalEntry")
         const moodSelect = document.querySelector("#moodSelect")
 
@@ -28,9 +28,9 @@ export const JournalForm = () => {
 <form action="">
         <fieldset>
             <label for="journalDate">Date of Entry</label>
-            <input type="date" name="journalDate" id="journalDate">
+            <input type="date" name="journalDate" id="journalDate" required>
             <label for="journalConcepts">Concepts covered</label>
-            <input type="text" name="journalConcept" id="journalConcept" autoComplete="off">
+            <input type="text" name="journalConcept" id="journalConcept" autoComplete="off" required>
             <label for="journalEntry">Journal Entry</label>
             <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
             <label for="moodSelecet">Mood:</label>

@@ -1,4 +1,5 @@
 let journal = []
+
 const eventHub = document.querySelector(".container")
 
 const dispatchStateChangeEvent = () => {
@@ -6,19 +7,22 @@ const dispatchStateChangeEvent = () => {
 }
 
 export const getJournalEntries = () => {
-    fetch("http://localhost:3000/entries")
+    return fetch("http://localhost:3000/entries")
         .then(response => response.json())
         .then(parsedEntries =>
             journal = parsedEntries)
 }
 
 export const useJournalEntries = () => {
-    const sortedByDate = journal.sort(
-        (currentEntry, nextEntry) =>
-        Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
-    )
-    return sortedByDate
-}
+        const sortedByDate = journal.sort(
+            (currentEntry, nextEntry) =>
+            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
+        )
+        return sortedByDate
+    }
+    // export const useJournalEntries = () => {
+    //     return journal.slice
+    // }
 
 export const saveJournalEntry = (newJournalEntry) => {
     fetch("http://localhost:3000/entries", {

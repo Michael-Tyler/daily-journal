@@ -1,60 +1,38 @@
 {
-  "entries": [
-    {
-      "date": "2020-07-30",
-      "concept": "ap..what?",
-      "entry": "WHAT THE HECK IS AN API!!!???",
-      "mood": "Not good",
-      "id": 1
-    },
-    {
-      "date": "",
-      "concept": "Fetch",
-      "entry": "Don't forget after .then(response=>response.json)\nto add Parenthesis. ",
-      "mood": "Fair",
-      "id": 2
-    },
-    {
-      "date": "2020-07-29",
-      "concept": "click events",
-      "entry": "When listening for click events, make sure your eventHub query selector is selecting the ID or Class properly. Twice now you've selected what you thought was a class but was instead an ID...",
-      "mood": "Fair",
-      "id": 3
-    },
-    {
-      "date": "2020-07-29",
-      "concept": "JaVaScRiPt!.?",
-      "entry": "tHiS sHiT iS hArD mAn, BuT i'M lEaRnInG... RiGhT!?",
-      "mood": "good",
-      "id": 4
-    },
-    {
-      "date": "2020-07-30",
-      "concept": "Adding entries",
-      "entry": "Just need more entries to see my css spacing properly.",
-      "mood": "Great",
-      "id": 5
-    },
-    {
-      "date": "2020-07-30",
-      "concept": "One weird thing",
-      "entry": "Every single time I finish a chapter in each column I get a little anxiety to open the next one.",
-      "mood": "Very Bad",
-      "id": 6
-    },
-    {
-      "date": "",
-      "concept": "la de daa",
-      "entry": "words words words!!",
-      "mood": "good",
-      "id": 7
-    },
-    {
-      "date": "2020-07-30",
-      "concept": "lorem Ipsum",
-      "entry": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus in labore ut consectetur, quod consequuntur dolor sed molestias tempora, aliquam iusto nam quam sit explicabo repellat asperiores. Fuga, et facere!",
-      "mood": "good",
-      "id": 8
-    }
-  ]
+    "entries": [{
+            "date": "2020-07-30",
+            "concept": "ap..what?",
+            "entry": "WHAT THE HECK IS AN API!!!???",
+            "mood": "Not good",
+            "id": 1
+        },
+        {
+            "date": "",
+            "concept": "Fetch",
+            "entry": "Don't forget after .then(response=>response.json)\nto add Parenthesis. ",
+            "mood": "Fair",
+            "id": 2
+        },
+        {
+            "date": "2020-07-29",
+            "concept": "click events",
+            "entry": "When listening for click events, make sure your eventHub query selector is selecting the ID or Class properly. Twice now you've selected what you thought was a class but was instead an ID...",
+            "mood": "Fair",
+            "id": 3
+        },
+        {
+            "date": "2020-07-29",
+            "concept": "JaVaScRiPt!.?",
+            "entry": "tHiS sHiT iS hArD mAn, BuT i'M lEaRnInG... RiGhT!?",
+            "mood": "good",
+            "id": 4
+        },
+        {
+            "date": "2020-07-30",
+            "concept": "Adding entries",
+            "entry": "Just need more entries to see my css spacing properly.",
+            "mood": "Great",
+            "id": 5
+        }
+    ]
 }
