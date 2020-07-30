@@ -1,0 +1,14 @@
+.journal__entries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.journalEntry {
+    border: 2px solid black;
+    flex-basis: 15%;
+    flex-direction: row;
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
