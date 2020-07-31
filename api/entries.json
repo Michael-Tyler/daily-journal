@@ -1,0 +1,45 @@
+{
+    "entries": [{
+            "date": "2020-07-30",
+            "concept": "ap..what?",
+            "entry": "WHAT THE HECK IS AN API!!!???",
+            "mood": "Not good",
+            "id": 1
+        },
+        {
+            "date": "",
+            "concept": "Fetch",
+            "entry": "Don't forget after .then(response=>response.json)\nto add Parenthesis. ",
+            "mood": "Fair",
+            "id": 2
+        },
+        {
+            "date": "2020-07-29",
+            "concept": "click events",
+            "entry": "When listening for click events, make sure your eventHub query selector is selecting the ID or Class properly. Twice now you've selected what you thought was a class but was instead an ID...",
+            "mood": "Fair",
+            "id": 3
+        },
+        {
+            "date": "2020-07-29",
+            "concept": "JaVaScRiPt!.?",
+            "entry": "tHiS sHiT iS hArD mAn, BuT i'M lEaRnInG... RiGhT!?",
+            "mood": "good",
+            "id": 4
+        },
+        {
+            "date": "2020-07-30",
+            "concept": "Adding entries",
+            "entry": "Just need more entries to see my css spacing properly.",
+            "mood": "Great",
+            "id": 5
+        },
+        {
+            "date": "2020-07-30",
+            "concept": "Words",
+            "entry": "Words Words Words Words Words",
+            "mood": "good",
+            "id": 6
+        }
+    ]
+}

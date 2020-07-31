@@ -16,39 +16,21 @@
             <h1>Michael Tyler</h1>
             <h2 class="titleBottom"> daily journal</h2>
         </div>
-        <!-- 1. a logo 2. my name -->
+
     </div>
 </header>
 
+
 <body>
-    <h2 class="journal">Daily Journal</h2>
-    <form action="">
-        <fieldset>
-            <label for="journalDate">Date of Entry</label>
-            <input type="date" name="journalDate" id="journalDate">
-            <label for="journalConcepts">Concepts covered</label>
-            <input type="text" name="journalConcepts" id="journalConcepts">
-            <label for="journalEntry">Journal Entry</label>
-            <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
-            <label for="moodSelecet">Mood:</label>
-            <select name="moodSelect" id="moodSelect">
-                <option value="Great">Great</option>
-                <option value="good">good</option>
-                <option value="Fair">fair</option>
-                <option value="Not good">bad</option>
-                <option value="Very Bad">Not Okay</option>
-            </select>
-            <button>Record Journal Entry</button>
-        </fieldset>
-    </form>
-    <div id="entryLog">
-
-    </div>
-
+    <main class="container">
+        <div class="JournalForm"></div>
+        <div class="journal__entries">
+            <div id="entryLog"></div>
+        </div>≈
+    </main>
 </body>
 <footer>
     <h4>Michael Tyler <a href="https://github.com/Michael-Tyler" target="_blank">Github</a></h4>
-
 </footer>
 <script type="module" src="./scripts/main.js"></script>
 
