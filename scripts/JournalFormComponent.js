@@ -19,13 +19,15 @@ eventHub.addEventListener("click", clickevent => {
             mood: moodSelect.value
         }
         saveJournalEntry(newEntry)
+
     }
+
 })
 
 export const JournalForm = () => {
     componentTarget.innerHTML =
         `<h2 class="journal">Daily Journal</h2>
-<form action="">
+        <form>
         <fieldset>
             <label for="journalDate">Date of Entry</label>
             <input type="date" name="journalDate" id="journalDate" required>
@@ -43,6 +45,7 @@ export const JournalForm = () => {
             </select>
             <button id="saveJournalEntry">Record Journal Entry</button>
         </fieldset>
-    </form>
+        </form>
+    
     `
 }
