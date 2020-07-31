@@ -1,45 +1,88 @@
 {
-    "entries": [{
-            "date": "2020-07-30",
-            "concept": "ap..what?",
-            "entry": "WHAT THE HECK IS AN API!!!???",
-            "mood": "Not good",
-            "id": 1
-        },
-        {
-            "date": "",
-            "concept": "Fetch",
-            "entry": "Don't forget after .then(response=>response.json)\nto add Parenthesis. ",
-            "mood": "Fair",
-            "id": 2
-        },
-        {
-            "date": "2020-07-29",
-            "concept": "click events",
-            "entry": "When listening for click events, make sure your eventHub query selector is selecting the ID or Class properly. Twice now you've selected what you thought was a class but was instead an ID...",
-            "mood": "Fair",
-            "id": 3
-        },
-        {
-            "date": "2020-07-29",
-            "concept": "JaVaScRiPt!.?",
-            "entry": "tHiS sHiT iS hArD mAn, BuT i'M lEaRnInG... RiGhT!?",
-            "mood": "good",
-            "id": 4
-        },
-        {
-            "date": "2020-07-30",
-            "concept": "Adding entries",
-            "entry": "Just need more entries to see my css spacing properly.",
-            "mood": "Great",
-            "id": 5
-        },
-        {
-            "date": "2020-07-30",
-            "concept": "Words",
-            "entry": "Words Words Words Words Words",
-            "mood": "good",
-            "id": 6
-        }
-    ]
+  "entries": [
+    {
+      "date": "2020-07-30",
+      "concept": "ap..what?",
+      "entry": "WHAT THE HECK IS AN API!!!???",
+      "mood": "Not good",
+      "id": 1
+    },
+    {
+      "date": "",
+      "concept": "Fetch",
+      "entry": "Don't forget after .then(response=>response.json)\nto add Parenthesis. ",
+      "mood": "Fair",
+      "id": 2
+    },
+    {
+      "date": "2020-07-29",
+      "concept": "click events",
+      "entry": "When listening for click events, make sure your eventHub query selector is selecting the ID or Class properly. Twice now you've selected what you thought was a class but was instead an ID...",
+      "mood": "Fair",
+      "id": 3
+    },
+    {
+      "date": "2020-07-30",
+      "concept": "Adding entries",
+      "entry": "Just need more entries to see my css spacing properly.",
+      "mood": "Great",
+      "id": 4
+    },
+    {
+      "date": "2020-07-31",
+      "concept": "Ticket Counter",
+      "entry": "Tried using an If statement, when simply needed to listen for the same event and call functions accordingly",
+      "mood": "good",
+      "id": 5
+    },
+    {
+      "date": "2020-07-31",
+      "concept": "eventHub",
+      "entry": "The Dispatch Yells out \"anythingYouWantItTo\", The Event listener listens to \"anythingYouWantItTo\" THIS IS KEY!!!",
+      "mood": "Fair",
+      "id": 6
+    },
+    {
+      "date": "2020-07-31",
+      "concept": "Testing ",
+      "entry": "Testing the removal of form tag to see if the page doesn't refresh, but instead populates",
+      "mood": "Great",
+      "id": 7
+    },
+    {
+      "date": "2020-07-31",
+      "concept": "test",
+      "entry": "<html> html tag\n<div> div tag\n<section class=\"test\"> section tag with class to test.",
+      "mood": "Not good",
+      "id": 8
+    },
+    {
+      "date": "2020-07-31",
+      "concept": "testing",
+      "entry": "testing with form tag",
+      "mood": "Very Bad",
+      "id": 9
+    },
+    {
+      "date": "2020-07-31",
+      "concept": "testing",
+      "entry": "Form with NO form tags",
+      "mood": "Very Bad",
+      "id": 10
+    },
+    {
+      "date": "2020-07-31",
+      "concept": "with tags",
+      "entry": "form tags present",
+      "mood": "Fair",
+      "id": 11
+    },
+    {
+      "date": "2020-07-31",
+      "concept": "checking refresh",
+      "entry": "Form tags still there",
+      "mood": "Great",
+      "id": 12
+    }
+  ]
 }
