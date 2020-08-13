@@ -1,30 +1,28 @@
-  import { useJournalEntries, getJournalEntries } from "./JournalDataProvider.js"
-  import { journalEntry } from "./JournalEntry.js";
+import { useJournalEntries, getJournalEntries } from "./JournalDataProvider.js"
+import { journalEntry } from "./JournalEntry.js";
 
-  const journalLog = document.querySelector(".journal__entries")
-  const eventHub = document.querySelector(".container")
+const journalLog = document.querySelector(".journal__entries")
+const eventHub = document.querySelector(".container")
 
-  eventHub.addEventListener("click", clickEvent => {
-      if (clickEvent.target.id === "saveJournalEntry") {
+eventHub.addEventListener("journalStateChanged", () => {
+    EntryListComponent()
+})
 
-      }
-  })
-
-  const render = (arrayOfJournalEntries) => {
-      const allEntriesConvertedToStrings = arrayOfJournalEntries.map(
-          (currentEntry) => {
-              return journalEntry(currentEntry)
-          }
-      ).join("")
-      journalLog.innerHTML = allEntriesConvertedToStrings
-  }
+const render = (arrayOfJournalEntries) => {
+    const allEntriesConvertedToStrings = arrayOfJournalEntries.map(
+        (currentEntry) => {
+            return journalEntry(currentEntry)
+        }
+    ).join("")
+    journalLog.innerHTML = allEntriesConvertedToStrings
+}
 
 
 
-  export const EntryListComponent = () => {
-      getJournalEntries()
-          .then(() => {
-              const journalEntryArray = useJournalEntries()
-              render(journalEntryArray)
-          })
-  }
+export const EntryListComponent = () => {
+    getJournalEntries()
+        .then(() => {
+            const journalEntryArray = useJournalEntries()
+            render(journalEntryArray)
+        })
+}

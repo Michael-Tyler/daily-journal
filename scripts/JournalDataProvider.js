@@ -7,22 +7,22 @@ const dispatchStateChangeEvent = () => {
 }
 
 export const getJournalEntries = () => {
-    return fetch("http://localhost:3000/entries")
+    return fetch("http://localhost:3000/entries?_expand=mood")
         .then(response => response.json())
         .then(parsedEntries =>
             journal = parsedEntries)
 }
 
+// export const useJournalEntries = () => {
+//         const sortedByDate = journal.sort(
+//             (currentEntry, nextEntry) =>
+//             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
+//         )
+//         return sortedByDate
+//     }
 export const useJournalEntries = () => {
-        const sortedByDate = journal.sort(
-            (currentEntry, nextEntry) =>
-            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
-        )
-        return sortedByDate
-    }
-    // export const useJournalEntries = () => {
-    //     return journal.slice
-    // }
+    return journal.slice()
+}
 
 export const saveJournalEntry = (newJournalEntry) => {
     fetch("http://localhost:3000/entries", {
@@ -32,6 +32,6 @@ export const saveJournalEntry = (newJournalEntry) => {
             },
             body: JSON.stringify(newJournalEntry)
         })
-        .then(useJournalEntries())
-        .then(dispatchStateChangeEvent())
+        .then(getJournalEntries)
+        .then(dispatchStateChangeEvent)
 }
