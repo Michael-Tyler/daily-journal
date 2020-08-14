@@ -13,13 +13,6 @@ export const getJournalEntries = () => {
             journal = parsedEntries)
 }
 
-// export const useJournalEntries = () => {
-//         const sortedByDate = journal.sort(
-//             (currentEntry, nextEntry) =>
-//             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
-//         )
-//         return sortedByDate
-//     }
 export const useJournalEntries = () => {
     return journal.slice()
 }
@@ -34,4 +27,11 @@ export const saveJournalEntry = (newJournalEntry) => {
         })
         .then(getJournalEntries)
         .then(dispatchStateChangeEvent)
+}
+
+export const deleteJournalEntry = (journalEntryObj) => {
+    return fetch(`http://localhost:8088/notes/${journalEntryObj.id }`, {
+            method: "DELETE"
+        })
+        .then(getJournalEntries)
 }

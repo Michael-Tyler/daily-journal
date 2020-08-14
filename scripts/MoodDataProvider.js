@@ -1,5 +1,3 @@
-//imports here(if any)
-
 let moods = []
 
 export const getMoods = () => {
