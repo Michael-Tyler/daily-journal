@@ -1,66 +1,51 @@
 {
-    "entries": [{
-            "date": "2020-08-13",
-            "concept": "testing",
-            "entry": "tested",
-            "moodId": "2",
-            "instructorId": 1,
-            "id": 1
-        },
-        {
-            "date": "2020-08-13",
-            "concept": "test",
-            "entry": "tested",
-            "moodId": "5",
-            "id": 2
-        },
-        {
-            "date": "2020-08-13",
-            "concept": "html",
-            "entry": "testing",
-            "moodId": "4",
-            "id": 3
-        },
-        {
-            "date": "2020-08-13",
-            "concept": "jon",
-            "entry": "jons entry",
-            "moodId": "1",
-            "id": 4
-        }
-    ],
-    "moods": [{
-            "id": 1,
-            "label": "Really confident"
-        },
-        {
-            "id": 2,
-            "label": "Like I got it. for the most part."
-        },
-        {
-            "id": 3,
-            "label": "Wait What?"
-        },
-        {
-            "id": 4,
-            "label": "Oh gosh no..."
-        },
-        {
-            "id": 5,
-            "label": "Really not confident..."
-        }
-    ],
-    "instructors": [{
-        "id": 1,
-        "firstName": "Steve",
-        "lastName": "Brownlee"
-    }, {
-        "id": 2,
-        "firstName": "Kristen",
-        "lastName": "Norris"
-    }, {
-        "id": 3,
-        "firstName": "Spencer",
-        "lastName": "Truett"
-    }]
+  "entries": [
+    {
+      "date": "2020-08-14",
+      "concept": "test",
+      "entry": "testing",
+      "moodId": "1",
+      "instructorId": "2",
+      "id": 1
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Really confident"
+    },
+    {
+      "id": 2,
+      "label": "Like I got it. for the most part."
+    },
+    {
+      "id": 3,
+      "label": "Wait What?"
+    },
+    {
+      "id": 4,
+      "label": "Oh gosh no..."
+    },
+    {
+      "id": 5,
+      "label": "Really not confident..."
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "firstName": "Steve",
+      "lastName": "Brownlee"
+    },
+    {
+      "id": 2,
+      "firstName": "Kristen",
+      "lastName": "Norris"
+    },
+    {
+      "id": 3,
+      "firstName": "Spencer",
+      "lastName": "Truett"
+    }
+  ]
 }

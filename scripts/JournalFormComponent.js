@@ -17,7 +17,9 @@ eventHub.addEventListener("click", clickevent => {
         let mood = parseInt(moodSelect.value)
         let concept = journalConcept.value
         let entry = journalEntry.value
-        if (mood !== 0 && concept !== "" && entry !== "") {
+        let instructor = instructorSelect.value
+
+        if (mood !== 0 && instructor !== 0 && concept !== "" && entry !== "") {
             const newEntry = {
                 date: journalDate.value,
                 concept: journalConcept.value,
@@ -35,6 +37,7 @@ eventHub.addEventListener("click", clickevent => {
 })
 
 const render = (moodCollection, instructorCollection) => {
+        debugger
         componentTarget.innerHTML =
             `<h2 class="journal">Daily Journal</h2>
         
