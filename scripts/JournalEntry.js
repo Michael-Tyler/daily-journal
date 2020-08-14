@@ -5,8 +5,7 @@ export const journalEntry = (entryObj) => {
         <div class="entry">${entryObj.entry}</div>
         <div class="mood">Feeling ${entryObj.mood.label}</div>
         <div class="date">${entryObj.date}</div>
+        <button id="deleteEntry--${entryObj.id}">Delete</button>
          </section>
     `
 }
-
-{ /*  */ }
