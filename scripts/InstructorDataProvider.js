@@ -1,7 +1,7 @@
 let instructors = []
 
 export const getInstructors = () => {
-    return fetch("http://localhost:3000/instructors")
+    return fetch("http://localhost:8088/instructors")
         .then(response => response.json())
         .then(parsedInstrusctors =>
             instructors = parsedInstrusctors)
