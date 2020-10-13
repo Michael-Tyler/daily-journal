@@ -4,6 +4,8 @@ import { useMoods } from "./MoodDataProvider.js";
 
 const journalLog = document.querySelector(".journal__entries")
 const eventHub = document.querySelector(".container")
+// let journals = []
+// let moods = []
 
 eventHub.addEventListener("journalStateChanged", () => {
     EntryListComponent()
@@ -13,16 +15,12 @@ eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("deleteEntry--")) {
         const [prefix, id] = clickEvent.target.id.split("--")
         const deleteEvent = new CustomEvent("deleteButtonClicked", {
-                detail: {
-                    chosenEntry: id
-                }
-            })
-            /*
-                Invoke the function that performs the delete operation.
+            detail: {
+                chosenEntry: id
+            }
+        })
 
-                Once the operation is complete you should THEN invoke
-                useNotes() and render the note list again.
-            */
+
         deleteJournalEntry(id).then(
             () => {
                 const updatedEntries = useJournalEntries()

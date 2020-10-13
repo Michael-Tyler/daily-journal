@@ -37,7 +37,7 @@ eventHub.addEventListener("click", clickevent => {
 })
 
 const render = (moodCollection, instructorCollection) => {
-        debugger
+
         componentTarget.innerHTML =
             `<h2 class="journal">Daily Journal</h2>
         
@@ -51,7 +51,7 @@ const render = (moodCollection, instructorCollection) => {
                         instructorObj => {
                        return `<option value="${instructorObj.id}">${instructorObj.firstName}</option>`
                     }).join("")
-}
+                }
             </select>
             <label for="journalConcepts">Concepts covered</label>
             <input type="text" name="journalConcept" id="journalConcept" autoComplete="off" required>
@@ -65,7 +65,7 @@ const render = (moodCollection, instructorCollection) => {
                         moodObj => {
                        return `<option value="${moodObj.id}">${moodObj.label}</option>`
                     }).join("")
-}
+                }
             </select>
             <button id="saveJournalEntry">Record Journal Entry</button>
         </fieldset>
